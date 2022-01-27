@@ -91,6 +91,11 @@ unset env
 
 ## Ne pas oublier
 
+### Générer une vraie clef de sécurité
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "votre adresse mail"
+```
 ### S'assurer que l'agent est actif (le dictionnaire de clefs)
 
 ```bash
