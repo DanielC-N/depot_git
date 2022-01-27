@@ -1,72 +1,76 @@
-# [Lien](https://www.youtube.com/watch?v=Zi_XLOBDo_Y)
 
+---
 # Ma documentation
 
-## Installations
 
-### Git
+## 1. Installations
+
+---
+### GIT
 
 Voici la liste des commandes pour installer Git à partir de zéro
 
-```bash
-sudo apt-get install git
-```
+- ```bash
+    sudo apt-get install git
+    ```
 
-```bash
-git config –global user.name “USERNAME”
-```
+- ```bash
+    git config –global user.name “USERNAME”
+    ```
 
-```bash
-git config –global user.email “EMAIL”
-```
+- ```bash
+    git config –global user.email “EMAIL”
+    ```
 
-```bash
-git config –global core.editor YOUR EDITOR
-```
+- ```bash
+    git config –global core.editor YOUR EDITOR
+    ```
 
-```bash
-git commit -am “initial commit” 
-```
+- ```bash
+    git commit -am “initial commit” 
+    ```
 
-```bash
-git branch -M main
-```
+- ```bash
+    git branch -M main
+    ```
 
-### Ssh
+---
+### SSH
 
 On doit d'abord créer une clé publique et privée :
 
-```bash
-cd ~/.ssh
-ssh-keygen -t rsa -b 4096 -C «EMAIL »
-```
+- ```bash
+    cd ~/.ssh
+    ssh-keygen -t rsa -b 4096 -C «EMAIL »
+    ```
 
 Pour vérifier si l'agent est actif :
 
-```bash
-eval "$(ssh-agent -s)"
-```
+- ```bash
+    eval "$(ssh-agent -s)"
+    ```
 
 On doit ajouter la clé privée à la bibliothèque
 
-```bash
-ssh-add "nom de clé privée"
-```
+- ```bash
+    ssh-add "nom de clé privée"
+    ```
 
 Pour se connecter au GIT : 
 
-```bash
-ssh -T git@github.com
-```
-
+- ```bash
+    ssh -T git@github.com
+    ```
+---
 ## Utilisation de GIT
 
+---
 ### Initialisation
 
-```bash
-git init
-```
+- ```bash
+    git init
+    ```
 
-```bash
-git add .
-```
+- ```bash
+    git add .
+    ```
