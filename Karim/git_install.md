@@ -23,5 +23,6 @@ Afin d'initialiser la connection Git-Github par SSH, voici les étapes à suivre
 ## Utilisation
 
 des trucs nouveaux
+j'ai modifié des trucs
 
 ### Initialisation
