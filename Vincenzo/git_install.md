@@ -83,3 +83,8 @@ Pour se connecter au GIT :
 - ```bash
     git push -u origin main
     ```
+
+git branch --> voir les branches
+git branch -d --> Supprm branche
+git merge "name" --> Pour appliquer les modif de la branche sur la branche actuelle
+git diff --> voir les différences exact
