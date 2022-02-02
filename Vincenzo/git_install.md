@@ -8,7 +8,7 @@
 ---
 ### GIT
 
-Voici la liste des commandes pour installer Git à partir de zéro
+Voici la liste des commandes pour installer Git et le paramétrer à partir de zéro
 
 - ```bash
     sudo apt-get install git
@@ -26,13 +26,7 @@ Voici la liste des commandes pour installer Git à partir de zéro
     git config –global core.editor YOUR EDITOR
     ```
 
-- ```bash
-    git commit -am “initial commit” 
-    ```
 
-- ```bash
-    git branch -M main
-    ```
 
 ---
 ### SSH
@@ -73,4 +67,18 @@ Pour se connecter au GIT :
 
 - ```bash
     git add .
+    ```
+
+- ```bash
+    git commit -am “initial commit” 
+    ```
+
+- ```bash
+    git branch -M main
+    ```
+- ```bash
+    git remote add main git@github.com:#Lien de ton dépot
+    ```
+- ```bash
+    git push -u origin main
     ```
