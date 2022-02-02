@@ -85,5 +85,25 @@ Pour se connecter au GIT :
 
 git branch --> voir les branches
 git branch -d --> Supprm branche
+git branch -D --> Forcer le delete de la branche
 git merge "name" --> Pour appliquer les modif de la branche sur la branche actuelle
 git diff --> voir les différences exact
+git push origin -d  "branch" --> Pour supprimer la branche en ligne
+!!!!!!!!! Ne jamais utiliser d'autres commandes forcées autre que le branch -D !!!!!!!!
+
+le rôle du .gitignore :
+Pour skipper les fichiers lors du git add :
+**/*.o --> Tout les fichiers .o dans les dossiers; sous dossiers etc
+
+git stash pop 
+--> prendre le dernier élément stash pour le récupérer
+git stash list
+--> Pour lister les stash
+git stash clear
+--> effacer le stash
+git stash drop stash@{1}
+--> Supprimer le slash 1 dans ce cas
+
+---
+# Regarder comment fonctionne le git stash
+
