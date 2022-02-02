@@ -23,7 +23,8 @@ Voici la liste des commandes pour installer Git et le paramétrer à partir de z
     ```
 
 - ```bash
-    git config –global core.editor YOUR EDITOR
+    git config –global core.editor YOUR EDI
+    TOR
     ```
 
 
