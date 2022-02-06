@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Branche level4
+=======
+BRANCHE TEST
+>>>>>>> test
 ---
 # Ma documentation
 
