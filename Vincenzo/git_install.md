@@ -6,7 +6,7 @@
 ## 1. Installations
 
 ---
-### GIT
+### 1.1 GIT
 
 Voici la liste des commandes pour installer Git et le paramétrer à partir de zéro
 
@@ -29,7 +29,7 @@ Voici la liste des commandes pour installer Git et le paramétrer à partir de z
 
 
 ---
-### SSH
+### 1.2 SSH
 
 On doit d'abord créer une clé publique et privée :
 
@@ -56,10 +56,10 @@ Pour se connecter au GIT :
     ssh -T git@github.com
     ```
 ---
-## Utilisation de GIT
+## 2. Utilisation de GIT
 
 ---
-### Initialisation
+### 2.1 Initialisation
 
 - ```bash
     git init
@@ -83,26 +83,70 @@ Pour se connecter au GIT :
     git push -u origin main
     ```
 
-git branch --> voir les branches
-git branch -d --> Supprm branche
-git branch -D --> Forcer le delete de la branche
-git merge "name" --> Pour appliquer les modif de la branche sur la branche actuelle
-git diff --> voir les différences exact
-git push origin -d  "branch" --> Pour supprimer la branche en ligne
+---
+
+### 2.2 Manipulation de branch
+
+- Pour voir les branches 
+```bash
+    git branch
+```
+
+- Pour supprimer une branche 
+```
+    git branch -d
+```
+
+- Pour forcer le delete de la branche
+```
+    git branch -D
+```
+
+- Pour appliquer les modifications de la branche actuelle
+```
+    git merge "name"
+```
+
+- Pour voir les différences 
+```
+    git diff
+```
+
+- Pour supprimer la branche en ligne
+```
+    git push origin -d "branch"
+```
+
 !!!!!!!!! Ne jamais utiliser d'autres commandes forcées autre que le branch -D !!!!!!!!
+
+
+### 2.3 Manipulation de Stash
+
+- Pour prendre le dernier élément stash pour le récupérer
+```
+    git stash pop
+```
+
+- Pour lister les stash 
+```
+    git stash list
+```
+
+- Effacer le stash
+```
+    git stash clear
+```
+
+- Supprimer le slash 
+```
+    git stash drop stash@{Number}
+```
+
+## 3. Rôle du .gitignore 
 
 le rôle du .gitignore :
 Pour skipper les fichiers lors du git add :
 **/*.o --> Tout les fichiers .o dans les dossiers; sous dossiers etc
-
-git stash pop 
---> prendre le dernier élément stash pour le récupérer
-git stash list
---> Pour lister les stash
-git stash clear
---> effacer le stash
-git stash drop stash@{1}
---> Supprimer le slash 1 dans ce cas
 
 ---
 # Regarder comment fonctionne le git stash
