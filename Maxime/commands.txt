@@ -1,0 +1,3 @@
+GPB - Git Push Boosted
+help, -h, --help - Display the commands
+"Git Creator" | GC - Create a new Git repo

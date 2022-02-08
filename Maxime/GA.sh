@@ -1,15 +1,19 @@
 #!/bin/bash
-if [ $1 == "" ]; then
+if [ "$1" == "" ]; then
   echo -n "Input the script you want to start "
   read opt
 else
   opt=$1;
 fi
-case $COUNTRY in
+case $opt in
 
   GPB)
     echo -n "Starting GPUSH Boosted"
     source "./GIT_PUSH_BOOSTED.sh"
+    ;;
+
+  "--help" | "-h" | "help")
+    cat "./commands.txt"
     ;;
 
   "Git Creator" | GC)

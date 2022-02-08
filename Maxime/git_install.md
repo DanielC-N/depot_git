@@ -30,8 +30,19 @@ $git push -u origin main
 
 ### Useful Git Commands
 
+HEAD ???
+
 ~~~bash
 git branch -r #get online branches
-git stash
+git stash ?????
 git clear
+# delete remote branch
+git push origin -d "branch name"
+~~~
+
+### Interaction Tickets
+to interact with ticket number 10
+~~~bash
+git commit -m "#10 blabla /spent 30m"
+git push
 ~~~
