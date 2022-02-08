@@ -12,10 +12,12 @@ if [ "$(echo $status | grep "fatal")" != "" ]; then
     echo "Not GitHub Directory"
 else
   if [ $opt == "" ]; then
-    if [ "$(git status | grep "Untracked" )" ]; then
+    if [ "$(git status | grep "Untracked" )" != "" ]; then
         git add .
     fi
-
+    if [ "$(git status | grep "Untracked" )" != "Changes to be committed" ]; then
+      git commit -q -m "Automatic Commit"
+    fi
 
   else
     if [ $opt == "a" ]; then
