@@ -93,37 +93,37 @@ Pour se connecter au GIT :
 ```
 
 - Pour supprimer une branche 
-```
+```bash
     git branch -d
 ```
 
 - Pour forcer le delete de la branche
-```
+```bash
     git branch -D
 ```
 
 - Pour appliquer les modifications de la branche actuelle
-```
+```bash
     git merge "name"
 ```
 
 - Pour voir les différences 
-```
+```bash
     git diff
 ```
 
 - Pour supprimer la branche en ligne
-```
+```bash
     git push origin -d "branch"
 ```
 
 - Pour récupérer les données sur un serveur
-```
+```bash
     git fetch "BRANCH"
 ```
 
 - Un fetch se suit d'un merge
-```
+```bash
     git merge "BRANCH"
 ```
 
@@ -136,24 +136,25 @@ Pour se connecter au GIT :
 ### 2.3 Manipulation de Stash
 
 - Pour prendre le dernier élément stash pour le récupérer
-```
+```bash
     git stash pop
 ```
 
 - Pour lister les stash 
-```
+```bash
     git stash list
 ```
 
 - Effacer le stash
-```
+```bash
     git stash clear
 ```
 
 - Supprimer le slash 
-```
+```bash
     git stash drop stash@{Number}
 ```
+ ** Attention ! Le drop peut changer le Number **
 
 ## 3. Rôle du .gitignore 
 
@@ -162,5 +163,3 @@ Pour skipper les fichiers lors du git add :
 **/*.o --> Tout les fichiers .o dans les dossiers; sous dossiers etc
 
 ---
-# Regarder comment fonctionne le git stash
-
