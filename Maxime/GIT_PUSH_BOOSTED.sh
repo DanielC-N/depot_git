@@ -8,6 +8,7 @@ fi
 git status &>TEMP
 status="$(cat TEMP)"
 
+
 if [ "$(echo $status | grep "fatal")" != "" ]; then
     echo "Not GitHub Directory"
 else
@@ -16,7 +17,7 @@ else
         git add .
     fi
     if [ "$(git status | grep "Untracked" )" != "Changes to be committed" ]; then
-      git commit -q -m "Automatic Commit"
+      git commit --quiet -m "Automatic Commit"
     fi
 
   else
