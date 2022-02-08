@@ -117,8 +117,21 @@ Pour se connecter au GIT :
     git push origin -d "branch"
 ```
 
+- Pour récupérer les données sur un serveur
+```
+    git fetch "BRANCH"
+```
+
+- Un fetch se suit d'un merge
+```
+    git merge "BRANCH"
+```
+
+---
+
 !!!!!!!!! Ne jamais utiliser d'autres commandes forcées autre que le branch -D !!!!!!!!
 
+---
 
 ### 2.3 Manipulation de Stash
 
