@@ -8,7 +8,7 @@ fi
 git status &>TEMP
 status="$(cat TEMP)"
 
-
+ # ddd
 if [ "$(echo $status | grep "fatal")" != "" ]; then
     echo "Not GitHub Directory"
 else
@@ -16,10 +16,12 @@ else
     if [ "$(git status | grep "Untracked" )" != "" ]; then
         git add .
     fi
-    if [ "$(git status | grep "Untracked" )" != "Changes to be committed" ]; then
+    if [ "$(git status | grep "Changes to be committed" )" != "" ]; then
       git commit --quiet -m "Automatic Commit"
     fi
-
+    if [ "$(git status | grep "branch is ahead of" )" != "" ]; then
+          git push --quiet
+    fi
   else
     if [ $opt == "a" ]; then
         echo "Adding to project"
