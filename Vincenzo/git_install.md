@@ -15,15 +15,15 @@ Voici la liste des commandes pour installer Git et le paramétrer à partir de z
     ```
 
 - ```bash
-    git config –global user.name “USERNAME”
+    git config –-global user.name “USERNAME”
     ```
 
 - ```bash
-    git config –global user.email “EMAIL”
+    git config –-global user.email “EMAIL”
     ```
 
 - ```bash
-    git config –global core.editor YOUR EDITOR
+    git config –-global core.editor YOUR EDITOR
     ```
 
 
@@ -152,9 +152,9 @@ Pour se connecter au GIT :
 
 - Supprimer le slash 
 ```bash
-    git stash drop stash@{Number}
+    git stash drop stash@{INDEX}
 ```
- ** Attention ! Le drop peut changer le Number **
+ ** Attention ! Le drop change l'index ! **
 
 ## 3. Rôle du .gitignore 
 
