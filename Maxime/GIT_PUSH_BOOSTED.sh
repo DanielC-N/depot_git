@@ -19,7 +19,7 @@ else
         git commit -m "Auto commit"
     fi
     if [ "$(git status | grep 'Untracked' )" != "" ]; then
-      
+
     fi
     if [ "$opt" == "c" ]; then
         if [ "$2" != "" ]; then
