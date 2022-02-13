@@ -18,8 +18,8 @@ else
     if [ "$(git status | grep 'to be committed' )" != "" ]; then
         git commit -q -m "Auto commit"
     fi
-    if [ "$(git status | grep 'Untracked' )" != "" ]; then
-
+    if [ "$(git status | grep 'Your branch is ahead' )" != "" ]; then
+      git push -q
     fi
     if [ "$opt" == "c" ]; then
         if [ "$2" != "" ]; then
