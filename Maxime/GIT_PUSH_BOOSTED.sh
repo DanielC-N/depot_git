@@ -16,7 +16,7 @@ else
       git add .
     fi
     if [ "$(git status | grep 'to be committed' )" != "" ]; then
-        git commit -m "Auto commit"
+        git commit -q -m "Auto commit"
     fi
     if [ "$(git status | grep 'Untracked' )" != "" ]; then
 
