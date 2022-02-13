@@ -27,9 +27,9 @@ git checkout main
 Vous faites un commit pour demander a sauvegarder les modifications avec:
 git commit -am "nom du commit pour se rappeler des modifications"
 Il faut aussi faire:
-git add
+git add "nom du fichier"
 Vous pouvez utiliser cette commande pour vérifier que tous a fonctionner:
 git status
 Pour finir vous faites cette commande pour pousser les modifications au répertoire:
-git push "nom de nouvelle branche" main
+git push 
 
