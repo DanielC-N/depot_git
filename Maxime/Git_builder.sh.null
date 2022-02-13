@@ -13,3 +13,5 @@ if [ $1 == "" ] || [ $2 == "" ] || [ $3 == "" ]; then
 else
   echo "No enough infos. Use txt file"
 fi
+
+## DO NOT USE - OR AT YOUR OWN RISKS

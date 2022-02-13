@@ -30,11 +30,15 @@ $git push -u origin main
 
 ### Useful Git Commands
 
-HEAD ???
+**HEAD** : The term HEAD refers to the current commit you are viewing. By default, you'll view the tip of the master branch on a repository, unless the main branch of your repository has a different name. The tip of the master branch is the most recent commit on the main branch of your codebase
+
+**git stash** : Revert all changes to match the HEAD, but will save modification in a "Stash". Stash can then be listed, and merged, or be further modified, or deleted. 
+
+Stash - TLDR : Saves uncommited for later use
 
 ~~~bash
 git branch -r #get online branches
-git stash ?????
+git stash
 git clear
 # delete remote branch
 git push origin -d "branch name"

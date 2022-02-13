@@ -4,7 +4,7 @@ if [ "$1" != "" ]; then
 else
   opt=""
 fi
-
+# not staged for commit
 git status &>TEMP
 status="$(cat TEMP)"
 rm TEMP
@@ -12,19 +12,14 @@ if [ "$(echo "$status" | grep 'fatal')" != "" ]; then
     echo "Not GitHub Directory"
 else
   if [ "$opt" == "" ]; then
+    if [ "$(git status | grep 'Untracked' )" != "" ] || [ "$(git status | grep 'not staged for commit' )" != "" ]; then
+      git add .
+    fi
+    if [ "$(git status | grep 'to be committed' )" != "" ]; then
+        git commit -m "Auto commit"
+    fi
     if [ "$(git status | grep 'Untracked' )" != "" ]; then
-        git add .
-    fi
-    if [ "$(git status | grep 'Changes to be committed' )" != "" ]; then
-      git commit --quiet -m "Automatic Commit"
-    fi
-    if [ "$(git status | grep 'branch is ahead of' )" != "" ]; then
-          git push --quiet
-    fi
-  else
-    if [ "$opt" == "a" ]; then
-        echo "Adding to project"
-        git add .
+      
     fi
     if [ "$opt" == "c" ]; then
         if [ "$2" != "" ]; then
