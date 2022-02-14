@@ -80,3 +80,5 @@ git stash list
 
 Pour voir ce qui a été changer dans la pile:
 git stash diff
+
+Voiçi le tuto de git
