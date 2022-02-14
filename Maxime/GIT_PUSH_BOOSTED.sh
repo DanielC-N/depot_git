@@ -21,6 +21,9 @@ else
     if [ "$(git status | grep 'Your branch is ahead' )" != "" ]; then
       git push -q
     fi
+    if [ "$opt" == "a" ]; then
+            git add .
+    fi
     if [ "$opt" == "c" ]; then
         if [ "$2" != "" ]; then
             git commit -m $2
