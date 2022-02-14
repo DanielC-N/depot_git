@@ -192,3 +192,52 @@ git pull
 **/*.o
 ```
 
+## Cas pratique:
+
+Nous allons maintenant mettre en pratique tout ce qu'on a appris jusqu'à présent.  
+Exercice: Nous voulons coder une nouvelle fonctionnalité 
+
+* Pour cela, il faut dans un premier temps initialiser le git en utilisant les commandes ci-dessus. (voir Utilisation/Initialisation)  
+* On créée une nouvelle branche:
+```bash
+git checkout -b "fonctionnalité"
+```
+* Maintenant on créé un fichier en php car on veut montrer différentes façons de créer un tableau dans ce langage de programmation.
+```bash  
+touch tables.php
+```
+* On commence à coder dans ce fichier et à la fin de la journée, avant d'arrêter de travailler, on veut faire un commit pour ne pas perdre notre progrès et puis tout 'pusher' :)
+
+* Attention, il faut avant ajouter notre nouveau fichier dans la liste des fichiers que gère le git. On fait donc:
+```bash
+git add "tables.php"
+```
+* Maintenant, on peut faire notre premier commit sans problème et faire un git push.
+```bash
+git commit -am "premiercommit"
+git push
+```
+* Le lendemain, on continue notre travail, et on ajoute deux autres moyens de créer un tableau en php, commit après chacun des deux et à la fin de la journée.... ON PUSH, oui!  
+(généralement une fonction équivaut un commit)
+```bash
+git commit -am "deuxiemecommit"
+git commit -am "troisièmecommit"
+git push
+```
+* Le jour suivant, on termine notre projet. Génial ! On fait donc un dernier commit pour tout mettre à jour et un push biensur.
+```bash
+git commit -am "finalcommit"
+git push
+```
+* Maintenant, on peut merge notre branche dans le main avec la commande suivante:
+```bash
+git merge "fonctionnalité"
+```
+* Et puis un dernier push pour l'envoyer au serveur!
+```bash
+git push
+```
+
+Voila! Maintenant, vous êtes prêt pour commencer un projet avec l'outil git! Bravo!
+
+
