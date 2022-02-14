@@ -40,6 +40,23 @@ Il faut: Un dossier,Un éditeur de texte et faire les commandes suivantes
 ```
 
 ```bash
+3.B Pour Modif Le Readme rapidemment :
+
+-Vim readme.md
+
+Vim est un éditeur de texte dans la console.
+
+Pour sortir nous fesons echap puis
+-wq
+
+- .gitignore  "nom du fichier"
+    Fichier non pris en compte - git add .
+- .gitignore "**/*.o" 
+    tous les fichiers avec l'extension mentionnée ici ".o" ne sont pas pris en compte
+```
+
+
+```bash
 4.Commandes de Base :
 - git init 
     init un repository
@@ -96,21 +113,7 @@ Il faut: Un dossier,Un éditeur de texte et faire les commandes suivantes
     supprime l'element précis de la file
 
 ```
-```bash
-3.B Pour Modif Le Readme rapidemment :
 
--Vim readme.md
-
-Vim est un éditeur de texte dans la console.
-
-Pour sortir nous fesons echap puis
--wq
-
-- .gitignore  "nom du fichier"
-    Fichier non pris en compte - git add .
-- .gitignore "**/*.o" 
-    tous les fichiers avec l'extension mentionnée ici ".o" ne sont pas pris en compte
-```
 
 ```bash 
 7.Cas Pratique : 
