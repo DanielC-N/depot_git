@@ -59,7 +59,7 @@ Pour se connecter au GIT :
 ## 2. Utilisation de GIT
 
 ---
-### 2.1 Initialisation
+### <a id="init"> 2.1 Initialisation </a>
 
 ```bash
 git init
