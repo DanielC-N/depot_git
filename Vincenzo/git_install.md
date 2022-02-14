@@ -168,19 +168,8 @@ Tout les fichiers .o dans les dossiers et les sous dossiers
 <br />
  
 ### 4.1 Initialiser (<a href="#2.1_Initialisation">cf. 2.1 Initialisation</a>)
-```bash
-git init
+<br />
 
-git add .
-
-git commit -am “initial commit” 
-
-git branch -M main
-
-git remote add main git@github.com:#Lien de ton dépot
-
-git push -u origin main
-```
 ### 4.2 Ajouter une nouvelle branche "test"
 ```bash
 git checkout -b test
