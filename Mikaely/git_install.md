@@ -104,27 +104,30 @@ Pour se familiariser avec Git, il y a quelque commande indispensable qu'il est u
 ```
 ```bash
 + // Git commit -[am] "message commit"
-    fait le git add auto sauf pour les fichiers qui ont été crée, le -a normalise les modif
+    fait le git add auto sauf pour les fichiers qui ont été
+    crée, le -a normalise les modif
 ```
 
 ```bash
 + // Git pull =  git fetch + git merge
-    tirer un remote repository vers soit, on tire les chnagements du serveur vers son user
+    tirer un remote repository vers soit, on tire les
+    changements du serveur vers son user
 ```
 ```bash
 +// Git push 
-    tirer le local vers le repository, on tire les changements du local vers le serveur
+    pousser le local vers le repository, on pousse les
+    changements du local vers le serveur
 ```
 ```bash
 + // Git commit 
     pour créer un checkpoint en local
 ```
 ```bash
-+ //Git statues 
++ // Git statues 
     pour voir les modif du repo
 ```
 ```
-+ //fork =  fetch and merge
++ // fork 
     pour cloner un repo d'un git à mon git 
 ```
 ```
@@ -156,7 +159,8 @@ Pour se familiariser avec Git, il y a quelque commande indispensable qu'il est u
 ```
 ```
 + // git diff 
-    avant un commit affiche les changements apportés au(x) fichier(s) modifiés 
+    avant un commit affiche les changements apportés au(x)
+    fichier(s) modifiés 
 ```
 ```
 + // git stash 
@@ -180,7 +184,8 @@ Pour se familiariser avec Git, il y a quelque commande indispensable qu'il est u
 ```
 ```
 + // .gitignore  "nom du fichier"
-    prend tous les dossiers/fichiers qu'on ne veut pas prendre en compte dans le git add.
+    prend tous les dossiers/fichiers qu'on ne veut pas
+    prendre en compte dans le git add.
 + // .gitignore "**/*.o" 
     tous les fichiers avec l'extension mentionnée ici ".o"
 ```
