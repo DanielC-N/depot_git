@@ -167,7 +167,7 @@ Tout les fichiers .o dans les dossiers et les sous dossiers
 
 <br />
  
-### 4.1 Initialiser (cf. 2.1 Initialisation)
+### 4.1 Initialiser (<a href="init">cf. 2.1 Initialisation</a>)
 ```bash
 git init
 
