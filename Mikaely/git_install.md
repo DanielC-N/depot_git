@@ -189,3 +189,38 @@ Pour se familiariser avec Git, il y a quelque commande indispensable qu'il est u
 + // .gitignore "**/*.o" 
     tous les fichiers avec l'extension mentionnée ici ".o"
 ```
+</br>
+
+## _Cas pratique_ :
+
+Dans le cas où l'on voudrait avoir un exemple pratique de l'utilisation de ces commandes, en voilà :
+
+- Dans un premier temps on initialisera notre repository (voir commandes Readme-création)
+
+- On veut ensuite créer une nouvelle branche on utilise alors : 
+```bash
+    + // Git checkout -b "nom_de_la_branche" [en pensant bien à nommer notre branche]
+```
+- Après avoir fait cela, on peut coder, modifier notre fichier à notre guise.  
+    Tant qu'un push n'a pas été effctué, notre branche principale n'est pas affectée.
+- Lorsque les modifications ont été apportées à notre fichier, on effectue un commit pour créer un "checkpoint" 
+```bash
+    + // Git commit -am "message_du_commit" [le message du commit peut être first_modif ou autre]
+```
+- Si le projet dure plusieurs jours, on peut push à la fin de chaque journée de travail:
+```bash
+#on code notre fichier
++ // git commit -am "modif_premiere" #on effectue un commit avec un message correspondant 
++ // git push #on fait un push
+```
+- Une fois le travail sur la branche terminé, on effectue ensuite un merge pour _fusionner_ le travail de notre branche avec principale :
+```bash
++ // git merge "nom_de_la_branche" #on fuisonne notre travail fait la branche entre guillemets avec la branche principale
+``` 
+- Lorsque tous cela est terminé, on effectue un _push_ final qui envoi notre travail sur le serveur :
+```bash
++ // git push
+```
+
+
+### Désormais vous êtes apte à utiliser Git !  
