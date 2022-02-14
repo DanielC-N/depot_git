@@ -200,7 +200,7 @@ Exercice: Nous voulons coder une nouvelle fonctionnalité
 * Pour cela, il faut dans un premier temps initialiser le git en utilisant les commandes ci-dessus. (voir Utilisation/Initialisation)  
 * On créée une nouvelle branche:
 ```bash
-git checkout -b "fonctionnalité"
+git checkout -b "fonctionnalite"
 ```
 * Maintenant on créé un fichier en php car on veut montrer différentes façons de créer un tableau dans ce langage de programmation.
 ```bash  
@@ -229,9 +229,10 @@ git push
 git commit -am "finalcommit"
 git push
 ```
-* Maintenant, on peut merge notre branche dans le main avec la commande suivante:
+* Maintenant, on peut merge notre branche dans le main sachant qu'il faut se positionner d'abord sur la branche main. On utilise donc les commandes suivantes:
 ```bash
-git merge "fonctionnalité"
+git checkout main
+git merge fonctionnalite
 ```
 * Et puis un dernier push pour l'envoyer au serveur!
 ```bash
