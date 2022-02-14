@@ -59,7 +59,7 @@ Pour se connecter au GIT :
 ## 2. Utilisation de GIT
 
 ---
-### <a id="init"> </a>  2.1 Initialisation 
+### <a id="2.1_Initialisation"> </a>  2.1 Initialisation 
 
 ```bash
 git init
@@ -167,7 +167,7 @@ Tout les fichiers .o dans les dossiers et les sous dossiers
 
 <br />
  
-### 4.1 Initialiser (<a href="#init">cf. 2.1 Initialisation</a>)
+### 4.1 Initialiser (<a href="#2.1_Initialisation">cf. 2.1 Initialisation</a>)
 ```bash
 git init
 
