@@ -61,27 +61,19 @@ Pour se connecter au GIT :
 ---
 ### 2.1 Initialisation
 
-- ```bash
-    git init
-    ```
+```bash
+git init
 
-- ```bash
-    git add .
-    ```
+git add .
 
-- ```bash
-    git commit -am “initial commit” 
-    ```
+git commit -am “initial commit” 
 
-- ```bash
-    git branch -M main
-    ```
-- ```bash
-    git remote add main git@github.com:#Lien de ton dépot
-    ```
-- ```bash
-    git push -u origin main
-    ```
+git branch -M main
+
+git remote add main git@github.com:#Lien de ton dépot
+
+git push -u origin main
+```
 
 ---
 
@@ -129,7 +121,7 @@ Pour se connecter au GIT :
 
 ---
 
-!!!!!!!!! Ne jamais utiliser d'autres commandes forcées autre que le branch -D !!!!!!!!
+**!!!!! Ne jamais utiliser d'autres commandes forcées autre que le branch -D !!!!!**
 
 ---
 
@@ -154,12 +146,78 @@ Pour se connecter au GIT :
 ```bash
     git stash drop stash@{INDEX}
 ```
- ** Attention ! Le drop change l'index ! **
+**Attention ! Le drop change l'index !**
 
 ## 3. Rôle du .gitignore 
 
-le rôle du .gitignore :
-Pour skipper les fichiers lors du git add :
-**/*.o --> Tout les fichiers .o dans les dossiers; sous dossiers etc
+### Il nous sert à skipper les fichiers lors du git add
 
 ---
+
+#### Exemple : 
+Tout les fichiers .o dans les dossiers et les sous dossiers
+
+```bash
+**/*.o
+```
+
+---
+
+## 4. Manipulation
+
+<br />
+ 
+### 4.1 Initialiser (cf. 2.1 Initialisation)
+```bash
+git init
+
+git add .
+
+git commit -am “initial commit” 
+
+git branch -M main
+
+git remote add main git@github.com:#Lien de ton dépot
+
+git push -u origin main
+```
+### 4.2 Ajouter une nouvelle branche "test"
+```bash
+git checkout -b test
+```
+### 4.3  Faire toutes les modifications nécessaires  
+<br />
+
+>   Imaginons que nous ajoutons "Début test" dans un fichier.  
+>   Par la suite, si vous éxécutez la commande "git status" ou "git diff".   
+>   vous allez voir les modifications que vous avez faites.
+
+### 4.4 Mettre à jour
+<br />
+
+> Nous avons maintenant besoin de sauvegarder vos modifications
+```bash
+git commit -am "ajout Début test"
+```
+### 4.5 Ajouter sur le git
+<br />
+
+> Maintenant que nous avons tout sauvegardé, nous devons push les modifications sur votre GIT.  
+
+```bash
+git push
+``` 
+
+### 4.6 Fusionner les branches
+<br />
+
+> Une fois que notre branche "test" est fonctionnelle et opérationnelle, nous allons la fusionner à la branche main et supprimer la branche "test" et ensuite ajouter de nouveau les modifications.  
+
+```bash
+git checkout main
+git merge test
+git branch -d test
+git push
+```
+
+**Nous avons terminé !**
